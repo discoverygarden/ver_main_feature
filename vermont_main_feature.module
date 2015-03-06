@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Vermont Main Feature feature.
+ */
+
+include_once 'vermont_main_feature.features.inc';
