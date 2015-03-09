@@ -1,8 +1,10 @@
 name = Vermont Main Feature
 core = 7.x
 package = Features
+dependencies[] = flexslider
 dependencies[] = node_export_features
 dependencies[] = vermont_content_types
+features[ctools][] = flexslider:flexslider_default_preset:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[fe_block_boxes][] = submit_to_collection_anonymous

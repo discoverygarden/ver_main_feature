@@ -203,7 +203,7 @@ function vermont_main_feature_views_default_views() {
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'slideshow';
   $handler->display->display_options['style_options']['row_class'] = 'frontpage-slideshow-row';
-  $handler->display->display_options['style_options']['slideshow_type'] = 'views_slideshow_cycle';
+  $handler->display->display_options['style_options']['slideshow_type'] = 'flexslider_views_slideshow';
   $handler->display->display_options['style_options']['slideshow_skin'] = 'default';
   $handler->display->display_options['style_options']['skin_info'] = array(
     'class' => 'default',
@@ -217,6 +217,7 @@ function vermont_main_feature_views_default_views() {
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['views_slideshow_pager_fields_fields'] = array(
     'dc.title' => 0,
     'PID' => 0,
+    'dc.description' => 0,
     'nothing' => 0,
   );
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['weight'] = '1';
@@ -227,9 +228,9 @@ function vermont_main_feature_views_default_views() {
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['views_slideshow_pager_fields_fields'] = array(
     'dc.title' => 'dc.title',
     'PID' => 0,
+    'dc.description' => 0,
     'nothing' => 0,
   );
-  $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['enable'] = 1;
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_slide_counter']['weight'] = '1';
@@ -265,6 +266,14 @@ function vermont_main_feature_views_default_views() {
   $handler->display->display_options['fields']['PID']['exclude'] = TRUE;
   $handler->display->display_options['fields']['PID']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['PID']['link_to_object'] = 0;
+  /* Field: Islandora Solr: dc.description */
+  $handler->display->display_options['fields']['dc.description']['id'] = 'dc.description';
+  $handler->display->display_options['fields']['dc.description']['table'] = 'islandora_solr';
+  $handler->display->display_options['fields']['dc.description']['field'] = 'dc.description';
+  $handler->display->display_options['fields']['dc.description']['label'] = '';
+  $handler->display->display_options['fields']['dc.description']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['dc.description']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['dc.description']['link_to_object'] = 0;
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
@@ -275,6 +284,7 @@ function vermont_main_feature_views_default_views() {
     <a href="islandora/object/[PID]"><img src="/islandora/object/[PID]/datastream/TN/view"></a>
     <div class="slideshow-item-text-wrapper">
      <p>[dc.title]</p>
+     <p>[dc.description]</p>
     </div>
   </div>
 </div>';
@@ -311,6 +321,7 @@ function vermont_main_feature_views_default_views() {
     <a href="islandora/object/[PID]"><img src="/islandora/object/[PID]/datastream/TN/view"></a>
     <div class="slideshow-item-text-wrapper">
      <p>[dc.title]</p>
+     <p>[dc.description]</p>
     </div>
   </div>
 </div>'),
