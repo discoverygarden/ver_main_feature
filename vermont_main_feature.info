@@ -43,6 +43,7 @@ features[fe_block_settings][] = views-front_page_browse-block
 features[fe_block_settings][] = views-front_view_slideshow-block
 features[fe_block_settings][] = views-top_facet_searches-block
 features[features_api][] = api:2
+features[flexslider_optionset][] = vermont_flexslider_optionset
 features[menu_links][] = menu-footer-menu_contact-us:node/4
 features[menu_links][] = menu-footer-menu_copyright:node/1
 features[menu_links][] = menu-footer-menu_creative-content-license:uuid/node/09648dae-14d6-46fe-82cd-cf4c0739201d
