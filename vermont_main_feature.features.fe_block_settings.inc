@@ -545,7 +545,7 @@ title',
 
   $export['views-c9aff44ea5cef77286d2b1558b49bfd0'] = array(
     'cache' => -1,
-    'css_class' => 'front-page-slideshow',
+    'css_class' => 'front-page-slideshow homepage-images',
     'custom' => 0,
     'delta' => 'c9aff44ea5cef77286d2b1558b49bfd0',
     'module' => 'views',
