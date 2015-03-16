@@ -200,6 +200,10 @@ function vermont_main_feature_views_default_views() {
   $handler = $view->new_display('block', 'Frontpage Slideshow', 'block_2');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Frontpage Slideshow';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '12';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'slideshow';
   $handler->display->display_options['style_options']['row_class'] = 'frontpage-slideshow-row';
@@ -281,11 +285,7 @@ function vermont_main_feature_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="slideshow-item-wrapper">
   <div class="slideshow-item-image-wrapper">
-    <a href="islandora/object/[PID]"><img src="/islandora/object/[PID]/datastream/TN/view"></a>
-    <div class="slideshow-item-text-wrapper">
-     <p>[dc.title]</p>
-     <p>[dc.description]</p>
-    </div>
+    <a href="islandora/object/[PID]"><img src="/islandora/object/[PID]/datastream/TN/view"><p class="flex-caption">[dc.title]</p></a>
   </div>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
@@ -318,11 +318,7 @@ function vermont_main_feature_views_default_views() {
     t('Frontpage Slideshow'),
     t('<div class="slideshow-item-wrapper">
   <div class="slideshow-item-image-wrapper">
-    <a href="islandora/object/[PID]"><img src="/islandora/object/[PID]/datastream/TN/view"></a>
-    <div class="slideshow-item-text-wrapper">
-     <p>[dc.title]</p>
-     <p>[dc.description]</p>
-    </div>
+    <a href="islandora/object/[PID]"><img src="/islandora/object/[PID]/datastream/TN/view"><p class="flex-caption">[dc.title]</p></a>
   </div>
 </div>'),
   );
@@ -342,6 +338,7 @@ function vermont_main_feature_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Image blocks';
   $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['link_display'] = 'custom_url';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -514,6 +511,16 @@ function vermont_main_feature_views_default_views() {
 
   /* Display: News Block */
   $handler = $view->new_display('block', 'News Block', 'block_3');
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'Read More >>';
+  $handler->display->display_options['defaults']['link_display'] = FALSE;
+  $handler->display->display_options['link_display'] = 'custom_url';
+  $handler->display->display_options['link_url'] = 'uuid/node/f5f9efad-20ee-4614-8420-cd1d5d1d0ea4';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -556,6 +563,7 @@ function vermont_main_feature_views_default_views() {
     t('<img src="/sites/all/modules/platform_main_feature/images/dgi-footer-logo.png"/>'),
     t('Welcome Message'),
     t('News Block'),
+    t('Read More >>'),
   );
   $export['clone_of_image_blocks'] = $view;
 
@@ -680,7 +688,9 @@ function vermont_main_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: image link */
   $handler->display->display_options['fields']['field_image_link']['id'] = 'field_image_link';
   $handler->display->display_options['fields']['field_image_link']['table'] = 'field_data_field_image_link';
@@ -705,7 +715,7 @@ function vermont_main_feature_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="browse-single-item-wrapper"><a href="[field_image_link]">[field_link_image]</a></div>';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div  title="[title]" class="browse-single-item-wrapper"><a href="[field_image_link]">[field_link_image]</a></div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -733,7 +743,7 @@ function vermont_main_feature_views_default_views() {
     t('Asc'),
     t('Desc'),
     t('Block'),
-    t('<div class="browse-single-item-wrapper"><a href="[field_image_link]">[field_link_image]</a></div>'),
+    t('<div  title="[title]" class="browse-single-item-wrapper"><a href="[field_image_link]">[field_link_image]</a></div>'),
   );
   $export['front_page_browse'] = $view;
 
@@ -758,6 +768,43 @@ function vermont_main_feature_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['style_plugin'] = 'slideshow';
+  $handler->display->display_options['style_options']['flexslider_views_slideshow']['optionset'] = 'vermont_flexslider_optionset';
+  $handler->display->display_options['style_options']['slideshow_type'] = 'flexslider_views_slideshow';
+  $handler->display->display_options['style_options']['slideshow_skin'] = 'default';
+  $handler->display->display_options['style_options']['skin_info'] = array(
+    'class' => 'default',
+    'name' => 'Default',
+    'module' => 'views_slideshow',
+    'path' => '',
+    'stylesheets' => array(),
+  );
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['weight'] = '1';
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['type'] = 'views_slideshow_pager_fields';
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['views_slideshow_pager_fields_fields'] = array(
+    'title' => 0,
+  );
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['enable'] = 1;
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['weight'] = '1';
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_slide_counter']['weight'] = '1';
+  $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['weight'] = '1';
+  $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['type'] = 'views_slideshow_pager_fields';
+  $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['views_slideshow_pager_fields_fields'] = array(
+    'title' => 0,
+  );
+  $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['enable'] = 1;
+  $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['weight'] = '1';
+  $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';
+  $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_slide_counter']['weight'] = '1';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['timeout'] = '5000';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['speed'] = '700';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['delay'] = '0';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['start_paused'] = 0;
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['remember_slide_days'] = '1';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['items_per_slide'] = '1';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['wait_for_image_load_timeout'] = '3000';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['cleartype'] = 0;
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['cleartypenobg'] = 0;
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
