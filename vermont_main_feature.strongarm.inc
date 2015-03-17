@@ -93,6 +93,15 @@ function vermont_main_feature_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'default_flexslider_optionset';
+  $strongarm->value = array(
+    'default' => TRUE,
+  );
+  $export['default_flexslider_optionset'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'designkit_color';
   $strongarm->value = array(
     'background' => '#E2E2E2',
