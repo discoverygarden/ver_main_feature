@@ -93,6 +93,7 @@ features[variable][] = back_to_top_prevent_in_admin
 features[variable][] = back_to_top_prevent_on_mobile
 features[variable][] = back_to_top_text_color
 features[variable][] = blockify_blocks
+features[variable][] = default_flexslider_optionset
 features[variable][] = designkit_color
 features[variable][] = node_admin_theme
 features[variable][] = node_export_file_supported_fields
