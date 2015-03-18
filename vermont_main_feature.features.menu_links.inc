@@ -10,46 +10,6 @@
 function vermont_main_feature_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: menu-footer-menu_contact-us:node/4
-  $menu_links['menu-footer-menu_contact-us:node/4'] = array(
-    'menu_name' => 'menu-footer-menu',
-    'link_path' => 'node/4',
-    'router_path' => 'node/%',
-    'link_title' => 'CONTACT US',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-footer-menu_contact-us:node/4',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-  );
-  // Exported menu link: menu-footer-menu_copyright:node/1
-  $menu_links['menu-footer-menu_copyright:node/1'] = array(
-    'menu_name' => 'menu-footer-menu',
-    'link_path' => 'node/1',
-    'router_path' => 'node/%',
-    'link_title' => 'COPYRIGHT',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-footer-menu_copyright:node/1',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-  );
   // Exported menu link: menu-footer-menu_creative-content-license:uuid/node/09648dae-14d6-46fe-82cd-cf4c0739201d
   $menu_links['menu-footer-menu_creative-content-license:uuid/node/09648dae-14d6-46fe-82cd-cf4c0739201d'] = array(
     'menu_name' => 'menu-footer-menu',
@@ -87,7 +47,7 @@ function vermont_main_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -42,
     'customized' => 1,
   );
   // Exported menu link: menu-footer-menu_logout:user/logout
@@ -107,7 +67,7 @@ function vermont_main_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -41,
     'customized' => 1,
   );
   // Exported menu link: menu-footer-menu_make-contact:uuid/node/329a2134-140a-4447-a59f-389948bef2ba
@@ -127,7 +87,7 @@ function vermont_main_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -43,
     'customized' => 1,
   );
   // Exported menu link: menu-footer-menu_policies:uuid/node/dd9db579-7172-436d-a740-721ec9a68523
@@ -147,7 +107,7 @@ function vermont_main_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -44,
     'customized' => 1,
   );
   // Exported menu link: menu-footer-menu_researchers:uuid/node/11ab3414-deb5-4985-9797-1a90ac057005
@@ -167,27 +127,27 @@ function vermont_main_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -45,
     'customized' => 1,
   );
-  // Exported menu link: menu-footer-menu_terms-of-use:node/15
-  $menu_links['menu-footer-menu_terms-of-use:node/15'] = array(
+  // Exported menu link: menu-footer-menu_terms-of-use:uuid/node/514b072a-fee4-4049-85cd-5a5eb817bf11
+  $menu_links['menu-footer-menu_terms-of-use:uuid/node/514b072a-fee4-4049-85cd-5a5eb817bf11'] = array(
     'menu_name' => 'menu-footer-menu',
-    'link_path' => 'node/15',
-    'router_path' => 'node/%',
+    'link_path' => 'uuid/node/514b072a-fee4-4049-85cd-5a5eb817bf11',
+    'router_path' => 'uuid',
     'link_title' => 'TERMS OF USE',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'menu-footer-menu_terms-of-use:node/15',
+      'identifier' => 'menu-footer-menu_terms-of-use:uuid/node/514b072a-fee4-4049-85cd-5a5eb817bf11',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -46,
     'customized' => 1,
   );
   // Exported menu link: menu-footer-menu_uvm-libraries:http://library.uvm.edu/
@@ -207,7 +167,7 @@ function vermont_main_feature_menu_default_menu_links() {
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -49,
     'customized' => 1,
   );
   // Exported menu link: menu-header-menu_about-this-site:uuid/node/3dfbfeaf-cb77-4ac0-b16f-145af17649b5
@@ -230,17 +190,17 @@ function vermont_main_feature_menu_default_menu_links() {
     'weight' => -47,
     'customized' => 1,
   );
-  // Exported menu link: menu-header-menu_about:node/5
-  $menu_links['menu-header-menu_about:node/5'] = array(
+  // Exported menu link: menu-header-menu_about:uuid/node/3dfbfeaf-cb77-4ac0-b16f-145af17649b5
+  $menu_links['menu-header-menu_about:uuid/node/3dfbfeaf-cb77-4ac0-b16f-145af17649b5'] = array(
     'menu_name' => 'menu-header-menu',
-    'link_path' => 'node/5',
-    'router_path' => 'node/%',
+    'link_path' => 'uuid/node/3dfbfeaf-cb77-4ac0-b16f-145af17649b5',
+    'router_path' => 'uuid',
     'link_title' => 'About',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'menu-header-menu_about:node/5',
+      'identifier' => 'menu-header-menu_about:uuid/node/3dfbfeaf-cb77-4ac0-b16f-145af17649b5',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -307,7 +267,7 @@ function vermont_main_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -44,
     'customized' => 1,
   );
   // Exported menu link: menu-header-menu_logout:user/logout
@@ -327,7 +287,7 @@ function vermont_main_feature_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -43,
     'customized' => 1,
   );
   // Exported menu link: menu-header-menu_make-contact:uuid/node/329a2134-140a-4447-a59f-389948bef2ba
@@ -350,17 +310,17 @@ function vermont_main_feature_menu_default_menu_links() {
     'weight' => -45,
     'customized' => 1,
   );
-  // Exported menu link: menu-header-menu_search:node/6
-  $menu_links['menu-header-menu_search:node/6'] = array(
+  // Exported menu link: menu-header-menu_search:uuid/node/6790d072-e293-4a54-aa4e-113c0350d41a
+  $menu_links['menu-header-menu_search:uuid/node/6790d072-e293-4a54-aa4e-113c0350d41a'] = array(
     'menu_name' => 'menu-header-menu',
-    'link_path' => 'node/6',
-    'router_path' => 'node/%',
+    'link_path' => 'uuid/node/6790d072-e293-4a54-aa4e-113c0350d41a',
+    'router_path' => 'uuid',
     'link_title' => 'Search',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'menu-header-menu_search:node/6',
+      'identifier' => 'menu-header-menu_search:uuid/node/6790d072-e293-4a54-aa4e-113c0350d41a',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -375,8 +335,6 @@ function vermont_main_feature_menu_default_menu_links() {
   t('About');
   t('About this site');
   t('Bookmarks');
-  t('CONTACT US');
-  t('COPYRIGHT');
   t('Creative content license');
   t('Home');
   t('LOGIN');
