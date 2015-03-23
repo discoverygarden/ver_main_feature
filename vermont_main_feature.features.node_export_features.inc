@@ -24,11 +24,11 @@ function vermont_main_feature_node_export_features_default() {
       \'type\' => \'page\',
       \'language\' => \'und\',
       \'created\' => \'1424291726\',
-      \'changed\' => \'1426703685\',
+      \'changed\' => \'1426707717\',
       \'tnid\' => \'0\',
       \'translate\' => \'0\',
       \'uuid\' => \'09648dae-14d6-46fe-82cd-cf4c0739201d\',
-      \'revision_timestamp\' => \'1426703685\',
+      \'revision_timestamp\' => \'1426707717\',
       \'revision_uid\' => \'1\',
       \'body\' => array(
         \'und\' => array(
@@ -107,108 +107,6 @@ function vermont_main_feature_node_export_features_default() {
         \'pid\' => \'1\',
         \'source\' => \'node/1\',
         \'alias\' => \'cc-license\',
-        \'language\' => \'und\',
-      ),
-      \'menu\' => NULL,
-      \'node_export_drupal_version\' => \'7\',
-    ),
-  (object) array(
-      \'vid\' => \'2\',
-      \'uid\' => \'1\',
-      \'title\' => \'Researchers\',
-      \'log\' => \'\',
-      \'status\' => \'1\',
-      \'comment\' => \'1\',
-      \'promote\' => \'0\',
-      \'sticky\' => \'0\',
-      \'vuuid\' => \'103a306d-27b0-4e0b-84ec-67d13c0397e3\',
-      \'nid\' => \'2\',
-      \'type\' => \'page\',
-      \'language\' => \'und\',
-      \'created\' => \'1424291726\',
-      \'changed\' => \'1424291726\',
-      \'tnid\' => \'0\',
-      \'translate\' => \'0\',
-      \'uuid\' => \'11ab3414-deb5-4985-9797-1a90ac057005\',
-      \'revision_timestamp\' => \'1424291726\',
-      \'revision_uid\' => \'1\',
-      \'body\' => array(
-        \'und\' => array(
-          array(
-            \'value\' => \'Lipsum\',
-            \'summary\' => \'\',
-            \'format\' => \'filtered_html\',
-            \'safe_value\' => "<p>Lipsum</p>\\n",
-            \'safe_summary\' => \'\',
-          ),
-        ),
-      ),
-      \'rdf_mapping\' => array(
-        \'rdftype\' => array(
-          \'foaf:Document\',
-        ),
-        \'title\' => array(
-          \'predicates\' => array(
-            \'dc:title\',
-          ),
-        ),
-        \'created\' => array(
-          \'predicates\' => array(
-            \'dc:date\',
-            \'dc:created\',
-          ),
-          \'datatype\' => \'xsd:dateTime\',
-          \'callback\' => \'date_iso8601\',
-        ),
-        \'changed\' => array(
-          \'predicates\' => array(
-            \'dc:modified\',
-          ),
-          \'datatype\' => \'xsd:dateTime\',
-          \'callback\' => \'date_iso8601\',
-        ),
-        \'body\' => array(
-          \'predicates\' => array(
-            \'content:encoded\',
-          ),
-        ),
-        \'uid\' => array(
-          \'predicates\' => array(
-            \'sioc:has_creator\',
-          ),
-          \'type\' => \'rel\',
-        ),
-        \'name\' => array(
-          \'predicates\' => array(
-            \'foaf:name\',
-          ),
-        ),
-        \'comment_count\' => array(
-          \'predicates\' => array(
-            \'sioc:num_replies\',
-          ),
-          \'datatype\' => \'xsd:integer\',
-        ),
-        \'last_activity\' => array(
-          \'predicates\' => array(
-            \'sioc:last_activity_date\',
-          ),
-          \'datatype\' => \'xsd:dateTime\',
-          \'callback\' => \'date_iso8601\',
-        ),
-      ),
-      \'cid\' => \'0\',
-      \'last_comment_timestamp\' => \'1424291726\',
-      \'last_comment_name\' => NULL,
-      \'last_comment_uid\' => \'1\',
-      \'comment_count\' => \'0\',
-      \'name\' => \'islandora\',
-      \'picture\' => \'0\',
-      \'data\' => \'b:0;\',
-      \'path\' => array(
-        \'pid\' => \'2\',
-        \'source\' => \'node/2\',
-        \'alias\' => \'researchers\',
         \'language\' => \'und\',
       ),
       \'menu\' => NULL,
@@ -623,11 +521,11 @@ function vermont_main_feature_node_export_features_default() {
       \'type\' => \'page\',
       \'language\' => \'und\',
       \'created\' => \'1424291726\',
-      \'changed\' => \'1426703159\',
+      \'changed\' => \'1426707562\',
       \'tnid\' => \'0\',
       \'translate\' => \'0\',
       \'uuid\' => \'6790d072-e293-4a54-aa4e-113c0350d41a\',
-      \'revision_timestamp\' => \'1426703159\',
+      \'revision_timestamp\' => \'1426707562\',
       \'revision_uid\' => \'1\',
       \'body\' => array(),
       \'rdf_mapping\' => array(
@@ -910,98 +808,6 @@ function vermont_main_feature_node_export_features_default() {
       \'node_export_drupal_version\' => \'7\',
     ),
   (object) array(
-      \'vid\' => \'16\',
-      \'uid\' => \'1\',
-      \'title\' => \'Browse By\',
-      \'log\' => \'\',
-      \'status\' => \'1\',
-      \'comment\' => \'1\',
-      \'promote\' => \'0\',
-      \'sticky\' => \'0\',
-      \'vuuid\' => \'c0f0ade6-0004-4f4f-bee4-9928e2a2b84c\',
-      \'nid\' => \'16\',
-      \'type\' => \'page\',
-      \'language\' => \'en\',
-      \'created\' => \'1425647251\',
-      \'changed\' => \'1425647251\',
-      \'tnid\' => \'0\',
-      \'translate\' => \'0\',
-      \'uuid\' => \'bd587498-89ab-4e00-8475-981246b08d78\',
-      \'revision_timestamp\' => \'1425647251\',
-      \'revision_uid\' => \'1\',
-      \'body\' => array(),
-      \'rdf_mapping\' => array(
-        \'rdftype\' => array(
-          \'foaf:Document\',
-        ),
-        \'title\' => array(
-          \'predicates\' => array(
-            \'dc:title\',
-          ),
-        ),
-        \'created\' => array(
-          \'predicates\' => array(
-            \'dc:date\',
-            \'dc:created\',
-          ),
-          \'datatype\' => \'xsd:dateTime\',
-          \'callback\' => \'date_iso8601\',
-        ),
-        \'changed\' => array(
-          \'predicates\' => array(
-            \'dc:modified\',
-          ),
-          \'datatype\' => \'xsd:dateTime\',
-          \'callback\' => \'date_iso8601\',
-        ),
-        \'body\' => array(
-          \'predicates\' => array(
-            \'content:encoded\',
-          ),
-        ),
-        \'uid\' => array(
-          \'predicates\' => array(
-            \'sioc:has_creator\',
-          ),
-          \'type\' => \'rel\',
-        ),
-        \'name\' => array(
-          \'predicates\' => array(
-            \'foaf:name\',
-          ),
-        ),
-        \'comment_count\' => array(
-          \'predicates\' => array(
-            \'sioc:num_replies\',
-          ),
-          \'datatype\' => \'xsd:integer\',
-        ),
-        \'last_activity\' => array(
-          \'predicates\' => array(
-            \'sioc:last_activity_date\',
-          ),
-          \'datatype\' => \'xsd:dateTime\',
-          \'callback\' => \'date_iso8601\',
-        ),
-      ),
-      \'cid\' => \'0\',
-      \'last_comment_timestamp\' => \'1425647251\',
-      \'last_comment_name\' => NULL,
-      \'last_comment_uid\' => \'1\',
-      \'comment_count\' => \'0\',
-      \'name\' => \'islandora\',
-      \'picture\' => \'0\',
-      \'data\' => \'b:0;\',
-      \'path\' => array(
-        \'pid\' => \'9\',
-        \'source\' => \'node/16\',
-        \'alias\' => \'browse-by\',
-        \'language\' => \'en\',
-      ),
-      \'menu\' => NULL,
-      \'node_export_drupal_version\' => \'7\',
-    ),
-  (object) array(
       \'vid\' => \'13\',
       \'uid\' => \'1\',
       \'title\' => \'Topic\',
@@ -1120,98 +926,6 @@ function vermont_main_feature_node_export_features_default() {
       \'node_export_drupal_version\' => \'7\',
     ),
   (object) array(
-      \'vid\' => \'9\',
-      \'uid\' => \'1\',
-      \'title\' => \'Islandora Advanced Search\',
-      \'log\' => \'\',
-      \'status\' => \'1\',
-      \'comment\' => \'1\',
-      \'promote\' => \'0\',
-      \'sticky\' => \'0\',
-      \'vuuid\' => \'e6b92772-5ec2-418b-9e9a-577156def660\',
-      \'nid\' => \'9\',
-      \'type\' => \'page\',
-      \'language\' => \'und\',
-      \'created\' => \'1424291726\',
-      \'changed\' => \'1424291726\',
-      \'tnid\' => \'0\',
-      \'translate\' => \'0\',
-      \'uuid\' => \'c4f960eb-e02b-4b17-9ef3-ab0e5931ac0f\',
-      \'revision_timestamp\' => \'1424291726\',
-      \'revision_uid\' => \'1\',
-      \'body\' => array(),
-      \'rdf_mapping\' => array(
-        \'rdftype\' => array(
-          \'foaf:Document\',
-        ),
-        \'title\' => array(
-          \'predicates\' => array(
-            \'dc:title\',
-          ),
-        ),
-        \'created\' => array(
-          \'predicates\' => array(
-            \'dc:date\',
-            \'dc:created\',
-          ),
-          \'datatype\' => \'xsd:dateTime\',
-          \'callback\' => \'date_iso8601\',
-        ),
-        \'changed\' => array(
-          \'predicates\' => array(
-            \'dc:modified\',
-          ),
-          \'datatype\' => \'xsd:dateTime\',
-          \'callback\' => \'date_iso8601\',
-        ),
-        \'body\' => array(
-          \'predicates\' => array(
-            \'content:encoded\',
-          ),
-        ),
-        \'uid\' => array(
-          \'predicates\' => array(
-            \'sioc:has_creator\',
-          ),
-          \'type\' => \'rel\',
-        ),
-        \'name\' => array(
-          \'predicates\' => array(
-            \'foaf:name\',
-          ),
-        ),
-        \'comment_count\' => array(
-          \'predicates\' => array(
-            \'sioc:num_replies\',
-          ),
-          \'datatype\' => \'xsd:integer\',
-        ),
-        \'last_activity\' => array(
-          \'predicates\' => array(
-            \'sioc:last_activity_date\',
-          ),
-          \'datatype\' => \'xsd:dateTime\',
-          \'callback\' => \'date_iso8601\',
-        ),
-      ),
-      \'cid\' => \'0\',
-      \'last_comment_timestamp\' => \'1424291726\',
-      \'last_comment_name\' => NULL,
-      \'last_comment_uid\' => \'1\',
-      \'comment_count\' => \'0\',
-      \'name\' => \'islandora\',
-      \'picture\' => \'0\',
-      \'data\' => \'b:0;\',
-      \'path\' => array(
-        \'pid\' => \'5\',
-        \'source\' => \'node/9\',
-        \'alias\' => \'advanced-search\',
-        \'language\' => \'und\',
-      ),
-      \'menu\' => NULL,
-      \'node_export_drupal_version\' => \'7\',
-    ),
-  (object) array(
       \'vid\' => \'12\',
       \'uid\' => \'1\',
       \'title\' => \'Type\',
@@ -1326,108 +1040,6 @@ function vermont_main_feature_node_export_features_default() {
       \'picture\' => \'0\',
       \'data\' => \'b:0;\',
       \'path\' => FALSE,
-      \'menu\' => NULL,
-      \'node_export_drupal_version\' => \'7\',
-    ),
-  (object) array(
-      \'vid\' => \'10\',
-      \'uid\' => \'1\',
-      \'title\' => \'Policies\',
-      \'log\' => \'\',
-      \'status\' => \'1\',
-      \'comment\' => \'1\',
-      \'promote\' => \'0\',
-      \'sticky\' => \'0\',
-      \'vuuid\' => \'f1c3f843-cb61-41c8-9eb1-74da357c68cf\',
-      \'nid\' => \'10\',
-      \'type\' => \'page\',
-      \'language\' => \'und\',
-      \'created\' => \'1424291726\',
-      \'changed\' => \'1424291726\',
-      \'tnid\' => \'0\',
-      \'translate\' => \'0\',
-      \'uuid\' => \'dd9db579-7172-436d-a740-721ec9a68523\',
-      \'revision_timestamp\' => \'1424291726\',
-      \'revision_uid\' => \'1\',
-      \'body\' => array(
-        \'und\' => array(
-          array(
-            \'value\' => \'Lipsum\',
-            \'summary\' => \'\',
-            \'format\' => \'filtered_html\',
-            \'safe_value\' => "<p>Lipsum</p>\\n",
-            \'safe_summary\' => \'\',
-          ),
-        ),
-      ),
-      \'rdf_mapping\' => array(
-        \'rdftype\' => array(
-          \'foaf:Document\',
-        ),
-        \'title\' => array(
-          \'predicates\' => array(
-            \'dc:title\',
-          ),
-        ),
-        \'created\' => array(
-          \'predicates\' => array(
-            \'dc:date\',
-            \'dc:created\',
-          ),
-          \'datatype\' => \'xsd:dateTime\',
-          \'callback\' => \'date_iso8601\',
-        ),
-        \'changed\' => array(
-          \'predicates\' => array(
-            \'dc:modified\',
-          ),
-          \'datatype\' => \'xsd:dateTime\',
-          \'callback\' => \'date_iso8601\',
-        ),
-        \'body\' => array(
-          \'predicates\' => array(
-            \'content:encoded\',
-          ),
-        ),
-        \'uid\' => array(
-          \'predicates\' => array(
-            \'sioc:has_creator\',
-          ),
-          \'type\' => \'rel\',
-        ),
-        \'name\' => array(
-          \'predicates\' => array(
-            \'foaf:name\',
-          ),
-        ),
-        \'comment_count\' => array(
-          \'predicates\' => array(
-            \'sioc:num_replies\',
-          ),
-          \'datatype\' => \'xsd:integer\',
-        ),
-        \'last_activity\' => array(
-          \'predicates\' => array(
-            \'sioc:last_activity_date\',
-          ),
-          \'datatype\' => \'xsd:dateTime\',
-          \'callback\' => \'date_iso8601\',
-        ),
-      ),
-      \'cid\' => \'0\',
-      \'last_comment_timestamp\' => \'1424291726\',
-      \'last_comment_name\' => NULL,
-      \'last_comment_uid\' => \'1\',
-      \'comment_count\' => \'0\',
-      \'name\' => \'islandora\',
-      \'picture\' => \'0\',
-      \'data\' => \'b:0;\',
-      \'path\' => array(
-        \'pid\' => \'6\',
-        \'source\' => \'node/10\',
-        \'alias\' => \'policies\',
-        \'language\' => \'und\',
-      ),
       \'menu\' => NULL,
       \'node_export_drupal_version\' => \'7\',
     ),
