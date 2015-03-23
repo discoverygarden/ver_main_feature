@@ -501,6 +501,27 @@ title',
     'visibility' => 0,
   );
 
+  $export['user-login'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'login',
+    'module' => 'user',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'ver_theme' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'ver_theme',
+        'weight' => -19,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['views-136a44c4a687023e66e4898268c95668'] = array(
     'cache' => -1,
     'css_class' => '',
