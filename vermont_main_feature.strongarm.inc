@@ -105,10 +105,10 @@ function vermont_main_feature_strongarm() {
   $strongarm->name = 'designkit_color';
   $strongarm->value = array(
     'background' => '#E2E2E2',
-    'header' => '#1d712a',
+    'header' => '#74a856',
     'content' => '#ffffff',
     'navigation' => '#E2E2E2',
-    'footer' => '#1d712a',
+    'footer' => '#74a856',
     'sidebars' => '#ffffff',
   );
   $export['designkit_color'] = $strongarm;
@@ -246,17 +246,18 @@ function vermont_main_feature_strongarm() {
     'toggle_favicon' => 1,
     'toggle_main_menu' => 1,
     'toggle_secondary_menu' => 1,
-    'default_logo' => 0,
-    'logo_path' => 'public://UoVHeaderLogo.png',
+    'default_logo' => 1,
+    'logo_path' => '',
+    'logo_upload' => '',
     'default_favicon' => 1,
     'favicon_path' => '',
     'favicon_upload' => '',
     'designkit_color' => array(
       'background' => '#E2E2E2',
-      'header' => '#E2E2E2',
+      'header' => '#74a856',
       'content' => '#ffffff',
       'navigation' => '#E2E2E2',
-      'footer' => '#E2E2E2',
+      'footer' => '#74a856',
       'sidebars' => '#ffffff',
     ),
   );
@@ -276,7 +277,7 @@ function vermont_main_feature_strongarm() {
     'toggle_main_menu' => 0,
     'toggle_secondary_menu' => 0,
     'default_logo' => 1,
-    'logo_path' => 'public://UoVHeaderLogo.png',
+    'logo_path' => '',
     'logo_upload' => '',
     'default_favicon' => 1,
     'favicon_path' => '',
@@ -297,10 +298,10 @@ function vermont_main_feature_strongarm() {
     'zen_wireframes' => 0,
     'designkit_color' => array(
       'background' => '#E2E2E2',
-      'header' => '#1d712a',
+      'header' => '#74a856',
       'content' => '#ffffff',
       'navigation' => '#E2E2E2',
-      'footer' => '#1d712a',
+      'footer' => '#74a856',
       'sidebars' => '#ffffff',
     ),
   );
