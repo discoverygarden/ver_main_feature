@@ -202,7 +202,7 @@ function vermont_main_feature_views_default_views() {
   $handler->display->display_options['title'] = 'Frontpage Slideshow';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '12';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '7';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'slideshow';
@@ -719,7 +719,7 @@ function vermont_main_feature_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div  title="[title]" class="browse-single-item-wrapper"><a href="[field_image_link]">[field_link_image]</a></div>';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div  title="[title]" class="browse-single-item-wrapper"><a href="[field_image_link]">[field_link_image]</a></div><a href="[title]">[title]</a>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -747,7 +747,7 @@ function vermont_main_feature_views_default_views() {
     t('Asc'),
     t('Desc'),
     t('Block'),
-    t('<div  title="[title]" class="browse-single-item-wrapper"><a href="[field_image_link]">[field_link_image]</a></div>'),
+    t('<div  title="[title]" class="browse-single-item-wrapper"><a href="[field_image_link]">[field_link_image]</a></div><a href="[title]">[title]</a>'),
   );
   $export['front_page_browse'] = $view;
 
