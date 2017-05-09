@@ -126,6 +126,7 @@ features[views_view][] = clone_of_image_blocks
 features[views_view][] = clone_of_platform_front_page
 features[views_view][] = front_page_browse
 features[views_view][] = front_view_slideshow
+features[views_view][] = list_style_field_view
 features_exclude[node][page] = page
 features_exclude[node][image_block] = image_block
 features_exclude[node][image_link] = image_link
