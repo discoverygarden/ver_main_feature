@@ -399,16 +399,16 @@ Web: discoverygarden.ca',
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => 'The discoverygarden platform leverages the flexibility of Islandora, an open source digital asset management system; supporting a variety of file formats including PDF, TIFF, JPEG, and various audio and video file formats through the standard Islandora Solution Packs.  
+        'value' => 'The discoverygarden platform leverages the flexibility of Islandora, an open source digital asset management system; supporting a variety of file formats including PDF, TIFF, JPEG, and various audio and video file formats through the standard Islandora Solution Packs.
 
-The platform is fully hosted providing customers with automated software updates. The platform can be purchased based on the amount of cloud storage needed. 
+The platform is fully hosted providing customers with automated software updates. The platform can be purchased based on the amount of cloud storage needed.
 
-The discoverygarden platform will include access to monthly training, a web-based knowledge center that will include frequently asked questions and other tools to aid in platform management, in addition discoverygarden intends to provide instant messaging support through the knowledge center for customers who require assistance. Monthly support packages are available in addition to the other support-style services included with the platform. 
+The discoverygarden platform will include access to monthly training, a web-based knowledge center that will include frequently asked questions and other tools to aid in platform management, in addition discoverygarden intends to provide instant messaging support through the knowledge center for customers who require assistance. Monthly support packages are available in addition to the other support-style services included with the platform.
 
-The discoverygarden platform can be used to safeguard, preserve, and make accessible any content including special collections, archives, administrative documents, and traditional institutional repository content such as theses or dissertations. 
+The discoverygarden platform can be used to safeguard, preserve, and make accessible any content including special collections, archives, administrative documents, and traditional institutional repository content such as theses or dissertations.
 The discoverygarden platform includes the scholar module, a suite of features focused on creating an easy to use and engaging institutional repository.  It addresses the need to encourage greater usage of institutional repositories by including numerous export and citation styles, as well as enhanced options to import publications using identifiers such as DOI and PMID. For administrators, a rights management feature allows clients to restrict and provide access to citations as necessary. The discoverygarden platform also provides statistics and reporting features, giving clients a better understanding of usage.
 
-Here is a list of the new features included in the discoverygarden platform: 
+Here is a list of the new features included in the discoverygarden platform:
 
 <ul>
 <li>Three standard theme options</li>
@@ -421,7 +421,7 @@ Here is a list of the new features included in the discoverygarden platform:
 <li>Able to integrate with Google Scholar</li>
 </ul>
 
-discoverygarden aims to facilitate continuous improvement of the hosted product by encouraging clients to collaborate in the future development decision-making process. Additional services are available to customers based on discoverygarden’s standard professional services rates. They include: 
+discoverygarden aims to facilitate continuous improvement of the hosted product by encouraging clients to collaborate in the future development decision-making process. Additional services are available to customers based on discoverygarden’s standard professional services rates. They include:
 <ul>
 <li>Consulting services </li>
 <li>Custom website theme</li>
@@ -430,8 +430,8 @@ discoverygarden aims to facilitate continuous improvement of the hosted product 
 <li>Metadata mapping</li>
 </ul>
 
-Contact us today to get your own hosted discoverygarden platform. 
- 
+Contact us today to get your own hosted discoverygarden platform.
+
 
  ',
         'summary' => '',
